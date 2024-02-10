@@ -1,0 +1,7 @@
+time
+os
+colorama
+platform
+psutil
+subprocess
+re

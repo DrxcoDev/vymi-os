@@ -10,7 +10,7 @@ public:
 
         // Si el resultado es diferente de 0, significa que no se pudo ejecutar el comando
         if (result != 0) {
-            return  MessageBox(NULL, "Todo listo para empezar", "INFO", MB_OK | MB_ICONINFORMATION);
+            return  printf("Succes -/::")
         }
 
         // Python está instalado
@@ -36,7 +36,7 @@ int main() {
             std::cout << "Ocurrió un error al ejecutar el archivo de Python." << std::endl;
         }
     } else {
-        MessageBox(NULL, "Hola, este es un mensaje de ejemplo.", "Mensaje", MB_OK | MB_ICONINFORMATION);;
+        MessageBox(NULL, "Parece que no esta descargado Pyhon en este ordenador, porfavor descargelo para continuar.", "Error al ejecutar", MB_OK | MB_ICONERROR);;
     }
 
     return 0;
