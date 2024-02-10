@@ -14,7 +14,7 @@ while True:
     if root == "!clear":
         os.system("cls")
         time.sleep(1)
-    
+
     elif root == "!exit" or root == "!quit":
         quit()
 
@@ -23,5 +23,7 @@ while True:
             subprocess.run([r"C:/Users/Soft/Documents/Py/src/x86_64/env/util/NewCmd.exe"], shell=True)
         else:
             os.system("g++ src/x86_64/env/util/NewCmd.cpp -o src/x86_64/env/util/NewCmd.exe")
+    else:
+        print(f"No se encuentra el comando '{root}'")
         
 

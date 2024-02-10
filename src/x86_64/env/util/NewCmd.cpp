@@ -1,19 +1,21 @@
 #include <iostream>
 #include <cstdlib> // Para la función system
+#include <ctime>
 
 int main() {
-    // Comando para ejecutar un archivo de Python (reemplaza "script.py" con tu nombre de archivo)
-    const char* comando = "python src/x86_64/env/cmd.py";
+    // Obtener la hora actual
+    std::time_t tiempo_actual = std::time(nullptr);
+    std::tm* tiempo_descompuesto = std::localtime(&tiempo_actual);
 
-    // Ejecutar el comando
-    int resultado = system(comando);
-
-    // Verificar si la ejecución fue exitosa
-    if (resultado == 0) {
-        std::cout << "El archivo de Python se ejecutó correctamente." << std::endl;
+    // Determinar si es de día o de noche
+    if (tiempo_descompuesto->tm_hour >= 6 && tiempo_descompuesto->tm_hour < 18) {
+        // Es de día, ejecutar la aplicación para el día
+        system("src/x86_64/env/cmd.py");
     } else {
-        std::cout << "Ocurrió un error al ejecutar el archivo de Python." << std::endl;
+        // Es de noche, ejecutar la aplicación para la noche
+        system("src/x86_64/env/cmd.py");
     }
 
     return 0;
+    
 }
