@@ -4,15 +4,15 @@ Vymi el nuevo sistema operativo que se ejecuta con Windows
 
 # Necesitas:
 
-1 - Mas de 1GB de RAM 
-2 - Espacio en tu disco (5GB)
-3 - CPU (Hasta ahora): x86_64 bit
-4 - Instalar Python
+ - Mas de 1GB de RAM 
+ - Espacio en tu disco (5GB)
+ - CPU (Hasta ahora): x86_64 bit
+ - Instalar Python
 
 Todo esto son los requisitos minimos.
 
 # Como se ejecuta:
 
-1 - Clonar o descargar este repositorio
-2 - Ejecutar ```requirements.txt``` como ```pip install -r requirements.txt```
-3 - Iniciar nuestro ```run.exe```
+ - Clonar o descargar este repositorio
+ - Ejecutar ```requirements.txt``` como ```pip install -r requirements.txt```
+ - Iniciar nuestro ```run.exe```
